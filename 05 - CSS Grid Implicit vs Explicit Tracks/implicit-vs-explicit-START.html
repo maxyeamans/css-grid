@@ -14,11 +14,21 @@
     <div class="item">2</div>
     <div class="item">3</div>
     <div class="item">4</div>
+    <!-- These are out of the explicit grid -->
+
+    <div class="item">5</div>
+    <div class="item">6</div>
   </div>
 
   <style>
     .container {
       display: grid;
+      grid-gap: 20px;
+      grid-template-columns: 200px 400px;
+      grid-template-rows: 50px 100px;
+      /* Size implicit rows. Note that Firefox only supports one row value; Chrome supports multiple */
+      grid-auto-rows: 150px;
+      grid-auto-columns: 100px;
     }
   </style>
 </body>

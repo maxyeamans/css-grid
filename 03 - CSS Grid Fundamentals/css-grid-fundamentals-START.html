@@ -7,7 +7,34 @@
   <link rel="stylesheet" href="../assets/style.css">
   <title>CSS Grid Fundamentals!</title>
 </head>
+  <div class="container">
+    <!-- These were made by typing item{$}*10 -->
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item">9</div>
+    <div class="item">10</div>
+  </div>
+  
+  <style>
+    .container {
+      display: grid;
+      /* Below we specify the width of each column in the grid */
+      grid-template-columns: 200px 500px;
+      /* Below we specify the height of each row */
+      grid-template-rows: 200px 100px 400px;
+      /*  NOTE: if you don't specify enough rows, css grid will create
+          implicit rows to fill in what wasn't specified */
+      /* grid-gap is like margin, but only between tracks */
+      grid-gap: 20px;
+    }
 
+  </style>
 <body>
 
 </body>
