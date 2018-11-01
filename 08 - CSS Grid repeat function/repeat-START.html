@@ -31,6 +31,10 @@
     .container {
       display: grid;
       grid-gap: 20px;
+      /* Repeat take two args: how many times to repeat, and the value to repeat */
+      /* You can stick a repeat in the middle, like below */
+      /* This says a row gets cols of 100px, 1fr, 75px, 1fr, 75px, and 200 px */
+      grid-template-columns: 100px repeat(2, 1fr 75px) 200px;
     }
   </style>
 </body>

@@ -18,7 +18,7 @@
     <div class="item item6">6</div>
     <div class="item item7">7</div>
     <div class="item item8">8</div>
-    <div class="item item8">💩</div>
+    <div class="item poop">💩</div>
     <div class="item item9">9</div>
     <div class="item item10">10</div>
     <div class="item item11">11</div>
@@ -48,6 +48,25 @@
       display: grid;
       grid-gap: 20px;
       grid-template-columns: repeat(5, 1fr);
+    }
+
+    .poop {
+      /* Below tells the grid item which tracks to start and end at. */
+      /* grid-column-start: 2;
+      grid-column-end: 5; */
+      
+      /* Below is shorthand for the lines above. Start track / End track */
+      /* grid-column: 2 / 5; */
+      
+      /* You can also put a span on either side of the forward slash,
+       * and just indicate at which track you want it to begin/end. */
+      /* grid-column: span 3 / 6; */
+
+      /* Below is like a shorthand for width: 100% for when you don't know how many columns you'll have. */
+      grid-column: 1 / -1;
+      /* NOTE: this trick only takes up the full width/height of the explicitly defined grid.
+       * If implicity columns/rows are added, it won't reach into those. */
+      background: #BADA55;
     }
   </style>
 </body>

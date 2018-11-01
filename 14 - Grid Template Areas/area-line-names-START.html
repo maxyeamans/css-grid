@@ -46,6 +46,17 @@
     .container {
       display: grid;
       grid-gap: 20px;
+      grid-template-areas: 
+        "left left left left right right right right"
+        "left left left left right right right right"
+        "left left left left right right right right"
+        "left left left left right right right right";
+    }
+
+    .item3 {
+      /* Don't quote the grid area names when placing grid items */
+      grid-column: left-start / right-end;
+      grid-row-end: left-end;
     }
   </style>
 </body>

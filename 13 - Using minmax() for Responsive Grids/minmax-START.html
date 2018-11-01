@@ -21,7 +21,13 @@
       display: grid;
       grid-gap: 20px;
       border: 10px solid var(--yellow);
-      grid-template-columns: repeat(auto-fill, 150px);
+      /* minmax() takes two args: the min and the max width/height */
+      /* grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); */
+      /* The code above will try to keep the items to the min */
+      /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+      /* The code above will try to keep the items at the max.
+       * This one's nice because it's like a shortcut for responsive design. */
+       grid-template-columns: fit-content(100px) 150px 150px 150px;
     }
   </style>
 </body>

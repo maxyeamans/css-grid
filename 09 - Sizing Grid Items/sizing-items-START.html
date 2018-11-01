@@ -10,13 +10,58 @@
 
 <body>
   <div class="container">
-
+     <div class="item item1">1</div>
+     <div class="item item2">2</div>
+     <div class="item item3">3</div>
+     <div class="item item4">4</div>
+     <div class="item item5">5</div>
+     <div class="item item6">6</div>
+     <div class="item item7">7</div>
+     <div class="item item8">8</div>
+     <div class="item item9">9</div>
+     <div class="item item10">10</div>
+     <div class="item item11">11</div>
+     <div class="item item12">12</div>
+     <div class="item item13">13</div>
+     <div class="item item14">14</div>
+     <div class="item item15">15</div>
+     <div class="item item16">16</div>
+     <div class="item item17">17</div>
+     <div class="item item18">18</div>
+     <div class="item item19">19</div>
+     <div class="item item20">20</div>
+     <div class="item item21">21</div>
+     <div class="item item22">22</div>
+     <div class="item item23">23</div>
+     <div class="item item24">24</div>
+     <div class="item item25">25</div>
+     <div class="item item26">26</div>
+     <div class="item item27">27</div>
+     <div class="item item28">28</div>
+     <div class="item item29">29</div>
+     <div class="item item30">30</div>
   </div>
 
   <style>
     .container {
       display: grid;
       grid-gap: 20px;
+      grid-template-columns: repeat(5, 1fr);
+    }
+    
+    .item9 {
+      background: mistyrose;
+      /* Setting a col to span a number makes that grid item carry over into the next available column */
+      grid-column: span 2;
+      /* NOTE: if you set an item to span more columns than are left in a  * row, it bumps that item down to the next row.
+       * Comment out above and uncomment below to see this in action. */
+      /* grid-column: span 3; */
+      /* Making an item span more than the explicitly defined grid
+       * will cause additional implicit columns to be added. 
+       * E.g., doing grid-column span 6; will increase the entire grid from 5 columns to 6. */
+      
+      /* Grid items can span multiple rows, too. */
+      grid-row: span 2;
     }
   </style>
 </body>

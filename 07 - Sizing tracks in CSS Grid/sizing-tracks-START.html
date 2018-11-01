@@ -33,6 +33,9 @@
       height: 600px;
       grid-gap: 20px;
       border: 10px solid var(--yellow);
+      /* "fr" is a unit of free space. */
+      /* Multiple units of "fr" will be calculated as a ratio */
+      /* So 1fr and 2fr means they'll occupy 1/3 and 2/3 of free space, respectively */
       grid-template-columns: auto 1fr;
     }
   </style>
